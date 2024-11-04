@@ -1,0 +1,2 @@
+# cursoPy
+Learning Python repository
