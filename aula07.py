@@ -16,3 +16,18 @@ n1 = int(input('Um valor: '))
 n2 = int(input('Outro valor: '))
 
 print('A soma vale {}'.format(n1+n2)) #sem utilização de uma terceira variável
+
+n3 = int(input('Um valor: '))
+n4 = int(input('Outro valor: '))
+
+s = n3+n4
+m = n3*n4
+d = n3/n4
+di = n3//n4
+e = n1**n2
+
+print('A soma é {}, o produto é {} e a divisão é {:.3f}'.format(s, m, d))
+print('Divisão inteira {} e potência {}'.format(di, e))
+
+print('A soma é {}, o produto é {} e a divisão é {:.3f}'.format(s, m, d),end=' ') #impedindo quebra de linha
+print('Divisão inteira {} e potência {}'.format(di, e))
