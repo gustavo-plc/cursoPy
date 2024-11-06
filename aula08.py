@@ -30,3 +30,7 @@ print(emoji.emojize('Olá mundo! 😃'))
 
 # qual a diferença entre módulos, pacotes e bibliotecas?
 
+# Resumo
+# Módulo: um único arquivo .py.
+# Pacote: uma pasta com um conjunto de módulos e um arquivo __init__.py.
+# Biblioteca: um conjunto de módulos e pacotes, geralmente com propósito específico e de uso amplo.
