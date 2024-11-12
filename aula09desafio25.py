@@ -2,6 +2,6 @@ nome = input('Digite seu nome completo: ').strip() # o strip retira espaços ant
 
 nome_lista = nome.lower().split()
 
-print('silva' in nome_lista) # o in procura na lista!
+print('silva' in nome_lista) # o in procura na lista! IN é um operador do python, e não um mét#odo!
 
 
