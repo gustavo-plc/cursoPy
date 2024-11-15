@@ -9,4 +9,4 @@ if media < 5:
 elif media >= 5 and media < 7:
     print('RECUPRAÇÃO!')
 else:
-    print('APROVADO!')
+    print('APROVADO!!')
