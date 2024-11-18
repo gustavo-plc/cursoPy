@@ -26,7 +26,7 @@ while True:
         resultado = 'i'
 
     #verificação do vencedor
-    if (escolha == resultado):
+    if escolha == resultado:
         print(f'Você ganhou! A soma foi {soma}, que é {"Par" if resultado == "p" else "Ímpar"}.')
         vitorias += 1
     else:
