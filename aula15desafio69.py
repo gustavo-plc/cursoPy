@@ -8,7 +8,7 @@ while True:
     idade = int(input('Digite sua idade: '))
     sexo = str(input('Digite o sexo (M/F): ')).lower().strip()
 
-    # tratamento de exceção do sexo
+    # tratamento de exceção do sexooo
 
     while sexo not in {'m', 'f'}:
         print('Entrada inválida. Digite novamente o sexo no formato (M)asculino ou (F)eminino:  ')
