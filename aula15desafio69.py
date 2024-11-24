@@ -1,6 +1,6 @@
 cont_maior = 0
 cont_mulher_menos20 = 0
-cont_homens= 0
+cont_homens = 0
 
 while True:
     # primeira leitura de idade
