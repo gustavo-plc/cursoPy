@@ -14,5 +14,5 @@ while True:
         cont = str(input('Deseja continuar? (S/N)')).strip().lower()
     if cont == 'n':
         print('#' * 50)
-        print(f'Você digitou os valores: {sorted(lista)}')
+        print(f'Você digitou os valores: {sorted(lista)}') #sorted(lista) não altera a lista, já o lista.sort() altera a original!
         break #sai do laço infinito do while True
