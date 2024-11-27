@@ -6,4 +6,6 @@ for i in range (0, 16, 2):
     print('R$ ' + '{:9>.2f}'.format(listagem[i+1]))
 
 
+#outra forma de fazer usando f-strings:
 
+# print(f'{listagem[i]:.<30}')
