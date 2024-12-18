@@ -10,14 +10,16 @@ for i in range(0, partidas):
     gols.append(int(input(f'Quantos gols ele fez na partida {i+1}? ')))
     jogador['total'] += gols[i]
 
+#ou jogador['total'] = sum(gols)
+
 jogador['gols'] = gols[:]
 
-print('-*-' *20)
+print('-#-' *20)
 
 for k, v in jogador.items():
     print(f'O campo {k} tem o valor {v}')
 
-print('-*-' *20)
+print('-#-' *20)
 
 print(f'O jogador {jogador['nome']} jogou {partidas} partidas!')
 
