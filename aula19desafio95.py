@@ -12,15 +12,14 @@ while True:
     jogador['total'] = 0
 
     for i in range(0, partidas):
-        gols.append(int(input(f'Quantos gols ele fez na partida {i+1}? ')))
+        gols.append(int(input(f'Quantos gols o jogador fez na partida {i+1}? ')))
         jogador['total'] += gols[i]
 
     #ou jogador['total'] = sum(gols)
 
     jogador['gols'] = gols[:]
     jogadores.append(jogador.copy())
-    print(jogadores)
-    print(jogador)
+
     cont = str(input('Deseja continuar? [S/N] ')).lower().strip()
     while cont not in {'s', 'n'}:
         print('Formato inválido!')
