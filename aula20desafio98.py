@@ -18,7 +18,6 @@ def contador(i, f, p):
 
 #programa principal
 
-
 contador(1, 10, 1)
 contador(90, 40, 10)
 
