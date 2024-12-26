@@ -22,3 +22,5 @@ def fatorial(n, show = False):
 print(fatorial(8, show = True)) #está printando o retorno, ou seja, somente o f
 
 print(fatorial(6)) #está printando o retorno, ou seja, somente o f
+
+help(fatorial)
