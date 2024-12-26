@@ -1,7 +1,7 @@
-from datetime import datetime
+from datetime import date
 
 def voto(ano_nascimento):
-    ano_atual = datetime.now().year
+    ano_atual = date.today().year
     idade = ano_atual - ano_nascimento
     return idade
 
