@@ -1,7 +1,7 @@
 def leiaint(n):
     num = input(n).strip()
     while num.isnumeric() == False:
-        print(f'{'ERRO! Digite um número inteiro válido!':3}')
+        print(f'{'\033[0;31mERRO! Digite um número inteiro válido!\033[m'}')
         num = input(n).strip()
     return num
 
