@@ -13,4 +13,4 @@ def voto(ano_nascimento):
         return f'Com {idade} anos, o voto é opcional! '
 
 
-print(voto(int(input('Em que ano você nasceu? '))))
+print(voto(int(input('Em que ano você nasceu? ')))) #irá printar o retorno da função
