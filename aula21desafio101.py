@@ -1,17 +1,16 @@
-from datetime import date
 
 def voto(ano_nascimento):
+    from datetime import date  # escopo de importação: com essa identação, importa somente para a função.
+    #economiza memória
+
     ano_atual = date.today().year
     idade = ano_atual - ano_nascimento
-    return idade
+    if idade < 16:
+        return f'Com {idade} anos, não se vota. '
+    elif idade >= 18:
+        return f'Com {idade} anos, o voto é obrigatório!'
+    else:
+        return f'Com {idade} anos, o voto é opcional! '
 
 
-an = int(input('Em que ano você nasceu? '))
-vt = voto(an)
-
-if vt >= 18:
-    print(f'Com {vt} anos, o voto é Obrigatório!')
-elif vt < 16:
-    print(f'Com {vt} anos, o voto é negado!')
-else:
-    print(f'Com {vt} anos, o voto é Opcional!')
+print(voto(int(input('Em que ano você nasceu? '))))
