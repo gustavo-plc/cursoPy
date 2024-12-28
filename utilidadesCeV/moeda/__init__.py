@@ -8,8 +8,8 @@ def aumentar(v, p = 0, format = False):
     :return: o valor final após o aumento
     """
     if format == True:
-        return f'R$ {v + p * v / 100}'
-    return v + p * v / 100
+        return f'R$ {v + p * v / 100:.2f}'
+    return f'{v + p * v / 100:.2f}'
 
 def diminuir(v, p = 0, format = False):
     """
@@ -20,22 +20,22 @@ def diminuir(v, p = 0, format = False):
     :return: o valor final após a redução
     """
     if format == True:
-        return f'R$ {v - p * v / 100}'
-    return v - p * v / 100
+        return f'R$ {v - p * v / 100:.2f}'
+    return f'{v - p * v / 100:.2f}'
 
 
 def dobro(v, format = False):
     if format == True:
-        return f'R$ {2 * v}'
-    return 2 * v
+        return f'R$ {2 * v:.2f}'
+    return f'{2 * v:.2f}'
 
 def metade(v, format = False):
     if format == True:
-        return f'R$ {v / 2}'
-    return v / 2
+        return f'R$ {v / 2:.2f}'
+    return f'{v / 2:.2f}'
 
 def moeda(v):
-    return f'R$ {v}'
+    return f'R$ {v:.2f}'
 
 def resumo(v, aumento = 0, reducao = 0):
     print('-' * 50)
