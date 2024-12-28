@@ -5,7 +5,7 @@ def leiaInt(n):
         except ValueError:
             print('Favor digitar um número inteiro!')
         except KeyboardInterrupt:
-            num = -1
+            num = 0
             print('\nOperação cancelada pelo usuário!')
             break
         except EOFError:
@@ -24,7 +24,7 @@ def leiaFloat(n):
         except ValueError:
             print('Favor digitar um número real!')
         except KeyboardInterrupt:
-            num = -1
+            num = 0
             print('\nOperação cancelada pelo usuário!')
             break
         except EOFError:
