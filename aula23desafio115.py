@@ -47,11 +47,10 @@ def mostraMenu():
                 cadastraPessoas()
             if op == 3:
                 print('Atualizando informações...')
-                sleep(1)
-                print('...')
-                sleep(1)
-                print('...')
-                sleep(1)
+                for i in range (0, 10):
+                    print('.', end = '')
+                    sleep(0.3)
+                print('.')
                 print(F'{'PROGRAMA ENCERRADO':^60}')
 
                 break
@@ -74,7 +73,7 @@ def leArquivo(nome_ar):
             else:
                 return printaArquivo(conteudo)
     except FileNotFoundError:
-        print(f'O arquivo {nome_ar} não foi encontrado!')
+        print(f'Não há pessoas cadastradas ou o arquivo não foi encontrado!')
     except PermissionError:
         print(f'Permissão negada para acessar o arquivo {nome_ar}')
     except Exception as erro:
