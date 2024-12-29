@@ -8,6 +8,7 @@
 #      '\033[0;30;45m'    #5 - roxo
 #      '\033[7;30m'       #6 - branco
 # )
+
 from time import sleep
 
 
@@ -56,7 +57,6 @@ def mostraMenu():
                 break
         break
 
-
 def mostraPessoas():
     print('--' * 30)
     print(f'{'PESSOAS CADASTRADAS':^60}')
@@ -64,7 +64,6 @@ def mostraPessoas():
     conteudo = leArquivo(nome_ar)
     printaArquivo(conteudo)
     mostraMenu()
-
 
 def leArquivo(nome_ar):
     try:
@@ -124,7 +123,6 @@ def cadastraPessoas():
                     break
         break
 
-
 def salvaArquivo(nome = ' ', conteudo = ''):
     try:
         with open(nome_ar, 'a') as arquivo:
@@ -136,7 +134,5 @@ def salvaArquivo(nome = ' ', conteudo = ''):
         print(f'Erro inesperado: {erro}')
     else:
         mostraMenu()
-
-
 
 mostraMenu()
